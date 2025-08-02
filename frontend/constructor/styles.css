@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.available-actions {
+    flex: 2;
+}
+.bot-structure {
+    flex: 4;
+}
+.telegram-emulator {
+    flex: 4;
+}
+
+.vertical-line {
+  width: 1px;          
+  height: 100vh;        
+  background-color: darkgrey; 
+}
+
+.horizontal-line{
+            
+  height: 1px;        
+  background-color: darkgrey; 
+}
+
+h2{
+    margin: 0;
+    padding: 10px;
+}
+
+.btn{
+    display: block;
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 30px;
+    margin: 10px auto;
+    font-size: 16px;
+}
+.telegram-emulator{
+    display: flex;
+    flex-direction: column;
+}
+.chat-container{
+    padding: 10px;
+    flex: 1;
+    
+}
+.chat-messages{
+    height: 93%;
+    background-color: rgb(221, 218, 217);
+    border: 1px solid darkgrey;
+}
+
+.chat-input{
+    height: 30px;
+    padding: 10px ;
+    display: flex;
+    gap: 10px;
+    border: 1px solid darkgrey;
+    border-top: none;
+}
+input{
+flex: 1;
+border: 1px solid darkgrey;
+border-radius: 20px;
+
+}
+
+.send-btn{
+    border-radius: 20px;
+    border: 1px solid darkgrey;
+    background-color: rgb(43, 112, 190);
+    color: white;
+    width: 100px;
+}

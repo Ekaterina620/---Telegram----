@@ -8,20 +8,16 @@ body {
     background-size: cover;     
     display: flex;
     justify-content: center;        
-    align-items: center;     
+    align-items: center;  
 }
-.conteiner{
-    display: flex;
-    justify-content: center;        
-    align-items: center;
-    gap: 15vw;
 
-}
 .intro h1{
     font-size: 40px;
+    text-align: center;
 }
 .intro p{
     font-size: 20px;
+    text-align: center;
 }
 .cards{
     display: flex;
@@ -39,24 +35,22 @@ body {
     transition: transform 0.3s;
     border: none; 
     cursor: pointer;
+    height: 150px;
 
+    transition: all 0.3s ease;
 }
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.card:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-@media (max-width: 1260px) {
-    .conteiner{
-        margin: 10vw;
-    }
-}
 
 @media (max-width: 800px) {
-    body {
-        align-items: flex-start;
-    }
-    .conteiner{
-        margin: 10vw;
-        flex-direction: column;  
-    }
+   .intro h1{
+    margin-top: 80px;
+   }
 }
