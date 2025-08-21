@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <div class="container">
+        <div class="container-available-actions">
+        <div class="available-actions">
+            <h2>Доступные действия</h2>
+            <div class="horizontal-line"></div>
+            <div class="buttons">
+                <button class="btn">Текст</button>
+                <button class="btn">Меню</button>
+                <button class="btn">Изображение</button>
+                <button class="btn">Вопрос</button>
+            </div>
+            
+        </div>
+        <div class="available-commands">
+            <h2>Доступные команды</h2>
+            <div class="horizontal-line"></div>
+            <div class="command-buttons">
+                <button class="btn">/start</button>
+                <button class="btn">/help</button>
+                <button class="btn">/quiz1</button>
+            </div>
+        </div>
+        </div>
+
+        
+        <div class="vertical-line"></div>
+
+        <div class="bot-structure">
+            <h2>Структура бота</h2>
+            <div class="horizontal-line"></div>
+            <div class="bot-actions">
+                
+            </div>
+        </div>
+
+        <div class="vertical-line"></div>
+        
+        <div class="telegram-emulator">
+            <h2>Эмулятор Telegram</h2>
+            <div class="horizontal-line"></div>
+            <div class="chat-container">
+                <div class="chat-messages" >
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Введите сообщение...">
+                    <button class="send-btn">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Логика блоков -->
+<script src="blocks.js"></script>
+
+<!-- Шаблоны ботов -->
+<script src="templates.js"></script>
+
+<!-- Скрипт, который собирает шаблон на странице -->
+<script type="module" src="constructor.js"></script>
+
+</body>
+</html>
