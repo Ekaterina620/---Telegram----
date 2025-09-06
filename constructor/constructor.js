@@ -25,3 +25,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+let botProject = {};
+
+const tokenInput = document.querySelector('.entering-token_btn');
+const sendBtn = document.getElementById('send-token-btn');
+
+sendBtn.addEventListener('click', () => {
+    const token = tokenInput.value.trim();
+    if (!token) {
+        alert('Введите токен!');
+        return;
+    }
+
+    const botJson = collectBotStructure();
+
+    botJson.token = token;
+
+    botProject = botJson;
+});

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Ekaterina620/---Telegram----#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "telegraf": "^4.16.3"
   }
 }

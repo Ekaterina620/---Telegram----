@@ -86,6 +86,21 @@ border-radius: 20px;
     width: 100px;
 }
 
+.container-available-actions {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.entering-token{
+    margin-top: auto;
+    padding: 10px;
+}
+
+.entering-token_btn{
+    margin-bottom: 10px;
+}
+
 /* стили для блоков с текстом*/
 
 .block{
